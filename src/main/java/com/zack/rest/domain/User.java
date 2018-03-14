@@ -1,15 +1,10 @@
 package com.zack.rest.domain;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-
 /**
  * Created by james on 2017/5/31.
  */
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement
-public class User implements java.io.Serializable {
+@JsonInclude(JsonInclude.Include.NON_DEFAULT)
+public class User{
 
     private static final long serialVersionUID = 1L;
 
